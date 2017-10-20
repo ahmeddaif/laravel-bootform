@@ -1,0 +1,26 @@
+{
+    "name": "agd/bootform",
+    "description": "bootstrap forms",
+    "authors": [
+        {
+            "name": "Ahmed Galal",
+            "email": "a.galal201@gmail.com"
+        }
+    ],
+	"minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "AGD\\BootForm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AGD\\BootForm\\BootFormServiceProvider"
+            ],
+            "aliases": {
+                "BootForm": "AGD\\BootForm\\Facades\\BootForm"
+            }
+        }
+    }
+}
